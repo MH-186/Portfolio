@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F3F4;
+}  */
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.section1 {
+  height: 100vh;
+  background-color: #FFFFFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langtog {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  cursor: pointer;
+  left: -36.5em;
+  animation: fade-left2 0.7s;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: transparent;
+}
+
+.introtext {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+/*    border-right: 2px solid black; */
+    color: 	black;
+    background-color: transparent;
+    z-index: 0;
+    position: absolute;
+    width: 14em;
+    margin-top: -80px;
+    margin-left: -60px;
+/*    margin-top: -150px;
+    margin-left: -600px; */
+/*    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(24),
+        cursor .5s step-end infinite alternate; */
+    animation: fade-left 0.3s;
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1)
+  }
+}
+
+.contents2 .lang-content .welcome { 
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  position: absolute;
+  text-align: right;
+  color: black;
+  background-color: transparent;
+  width: 19em;
+  right: -38em;
+  animation: fade-right 0.7s;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1)
+  }
+}
+
+.contents2 .lang-content .welcome2 {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  position: absolute;
+  text-align: left;
+  color: black;
+  background-color: transparent;
+  width: 19em;
+  left: -36.5em;
+  animation: fade-left2 0.7s;
+}
+
+@keyframes fade-left2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1)
+  }
+}
+
+.randomahhline {
+  border-top: 1.5px solid #000;
+  width: 18.2em;
+  margin-top: -1em;
+  margin-left: -54.9em;
+  color: transparent;
+  position: absolute;
+}
+
+/* @keyframes cursor {
+    50% { border-color: transparent }
+} 
+@keyframes typing {
+    from { width: 0 } 
+} */
+.lang-content {
+  display: none;
+}
+
+.lang-content[data-lang="en"] {
+  display: block;
+}
+.langbtn[data-lang="en"] {
+  transition: 1.5s;
+}
+.langbtn[data-lang="en"]:hover {
+  color: #A0A0A0;
+}
+
+
+.langbtn[data-lang="fr"] {
+  transition: 1.5s;
+}
+.langbtn[data-lang="fr"]:hover {
+  color: #A0A0A0;
+
+
+}.langbtn[data-lang="id"] {
+  transition: 1.5s;
+}
+.langbtn[data-lang="id"]:hover {
+  color: #A0A0A0;
+
+
+}.langbtn[data-lang="ch"] {
+  transition: 1.5s;
+}
+.langbtn[data-lang="ch"]:hover {
+  color: #A0A0A0;
+} 
+
+.navig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 20em;
+  position: absolute;
+  bottom: -5.78em;
+  left: -6em;
+  animation: fade-up 0.7s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1)
+  }
+}
+
+.navig a {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 0 1px;
+  position: relative;
+  width: fit-content;
+  transition: all 1s ease 0s;
+}
+
+.navig a:hover {
+  color: #A0A0A0; 
+}
+
+.navig a::before { 
+  content: '';
+  position: absolute;
+  bottom: 1%;
+  left: 0px;
+  width: 0%;
+  height: 1px;
+  background-color: #A0A0A0;
+  transition: all .5s;
+}
+
+.navig a:hover::before {
+  width: 100%;
+}
+
+/* ----------------------------------- SECTION 2 ----------------------------------- */
+/* ----------------------------------- SECTION 2 ----------------------------------- */
+/* ----------------------------------- SECTION 2 ----------------------------------- */
+/* ----------------------------------- SECTION 2 ----------------------------------- */
+/* ----------------------------------- SECTION 2 ----------------------------------- */
+ 
+.section2 {
+    height: 100vh;
+    background-color: #FFFFFD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wholecontent {
+  margin-top: -3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 6.7em;
+  line-height: 85%;
+
+  margin-bottom: -300px;
+  margin-left: -475px;
+  position: absolute;
+}
+
+.randomline1 {
+  border-top: 1px solid #000;
+  width: 66em;
+  margin-bottom: -33em;
+  color: transparent;
+  position: absolute;
+}
+.randomline2 {
+  border-top: 1px solid #000;
+  width: 66em;
+  margin-bottom: -7em;
+  color: transparent;
+  position: absolute;
+}
+.randomline3 {
+  border-left: 1px solid #000;   
+  height: 19em;
+  margin-top: -15em;
+  margin-right: -3em;
+  color: transparent;
+  position: absolute;
+}
+.randomline4 {
+  border-right: 1px solid #000;
+  height: 11.2em;
+  margin-top: 18.5em;
+  margin-right: -10em;
+  color: transparent;
+  position: absolute;
+}
+
+#titletext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 4em;
+  position: absolute;
+  margin-left: -7.97em;
+  margin-top: -3.7em;
+}
+
+#paratitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.9em;
+  width: 100%;
+  position: absolute;
+  margin-left: 2.14em;
+  margin-top: 1.2em;
+}
+
+#para {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 430px;
+  height: 200px;
+  margin-top: 8.9em;
+  margin-left: 5em;
+  position: absolute;
+  background-color: transparent;
+  z-index: 2;
+
+/*  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%; */
+  
+}
+
+#para2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 419px;
+  position: absolute;
+  margin-top: 5.5em;
+  margin-left: 5em;
+}
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+#text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 500px;
+    height: 200px;
+    margin-left: -25.2em;
+    margin-top: -8em;
+    position: absolute;
+    z-index: 1;
+    
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+
+    background-color: transparent;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes appear2 {
+  from {
+    opacity: 0;
+    transform: translateX(80px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+
+  
+  .cards {
+    display: inline-block;
+    height: 39vh;
+    place-items: center;
+    background-color: transparent;
+    width: 29vh;
+    position: absolute;
+    margin-left: 37em;
+    margin-top: -16em;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+  }
+
+  #c1 {
+    background-color: black;
+  }
+  
+  #c2 {
+    background-color: blue;
+  }
+  
+  #c3 {
+    background-color: red;
+  }
+  
+  #c4 {
+    background-color: green;
+  }
+  
+  .cards:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+  }
+  
+  .cards:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+  }
+  
+  .cards:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+  }
+  
+  .cards:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+  }
+  
+  #c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+  }
+  
+  #c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+  }
+  
+  #c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+  }
+  
+  #c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+  }
+
+
+  
+.arrow-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  position: absolute;
+  font-weight: bold;
+  margin-right: -57.3em;
+  margin-top: -33em;
+  transform: scaleX(-1);
+}
+
+svg {
+  transition: transform 0.5s;
+  transform: rotate(180deg);
+}
+svg path {
+  stroke: #000;
+}
+
+#hoverhere {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  font-size: 13px;
+  width: 75px;
+  text-align: left;
+  margin-top: -35em;
+  margin-right: -75em;
+}
+
+.adinf {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 650;
+  font-size: 2.2em;
+  margin-top: 15.8em;
+  margin-right: 19.3em;
+}
+#parclas {
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  width: 46em;
+  margin-top: 32em;
+  margin-left: 30em;
+}
+
+/* ----------------------------------- SECTION 3 ----------------------------------- */
+/* ----------------------------------- SECTION 3 ----------------------------------- */
+/* ----------------------------------- SECTION 3 ----------------------------------- */
+/* ----------------------------------- SECTION 3 ----------------------------------- */
+/* ----------------------------------- SECTION 3 ----------------------------------- */
+
+
+.section3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15em;
+    border-bottom: 1px solid #ccc;
+    width: 69em;
+    margin-top: -30em;
+}
+
+.btn-box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-box button:hover {
+    color: #ff4b3d;
+}
+
+.content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+#content1{
+    margin-top: 0px;
+    transform: translateX(0px);
+}
+
+#content2{
+    margin-top: 0px;
+    transform: translateX(2000px);
+}
+
+.group {
+  display: flex;
+  position: absolute;
+  margin-left: -50em;
+}
+
+
+
+
+
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+
+  /* Base circle style */
+  .circle {
+    font-family: 'Montserrat', sans-serif;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .circle:hover {
+    transform: scale(1.6);
+  }
+  
+
+  .circle span {
+    position: absolute;
+    transition: opacity 0.2s ease;
+  }
+
+  .circle .name {
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  .circle .text {
+    font-size: 9px;
+    line-height: 1;
+    opacity: 0;
+  }
+
+  .circle:hover .name {
+    opacity: 0;
+  }
+
+  .circle:hover .text {
+    opacity: 1;
+  }
+
+  /* Individual circle classes */
+  .circle-1 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: -10em;
+    margin-top: -10em;
+    width: 7em;
+    height: 7em;
+  }
+
+  .circle-2 {
+    background: #232b2b;
+    position: absolute;
+    margin-top: -9em;
+    margin-left: 0.6em;
+  }
+
+  .circle-3 {
+    background: #232b2b;
+    position: absolute;
+    margin-top: -1em;
+    margin-left: -1.6em;
+    width: 7.3em;
+    height: 7.3em;
+    z-index: 10;
+  }
+
+  .circle-4 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: -10em;
+  }
+
+  .circle-5 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: -10em;
+    margin-top: 8em;
+    width: 6em;
+    height: 6em;
+  }
+
+  .circle-6 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: -1em;
+    margin-top: 10em;
+    width: 7.3em;
+    height: 7.3em;
+  }
+
+  .circle-7 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: 8em;
+    margin-top: 6em;
+  }
+  
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+/* ------------------- PROJECT 1 ------------------- */
+
+
+
+
+.description {
+  position: absolute;
+  margin-left: 10em;
+}
+
+.description h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: end;
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 0.9em;
+  margin-left: 15em;
+  margin-top: -3em;
+}
+
+.description p {
+  font-family: 'Montserrat', sans-serif;
+  width: 30em;
+  font-size: medium;
+  text-align: end;
+  margin-left: 15em;
+}
+
+
+
+
+
+/* ------------------- PROJECT 2 ------------------- */
+/* ------------------- PROJECT 2 ------------------- */
+/* ------------------- PROJECT 2 ------------------- */
+/* ------------------- PROJECT 2 ------------------- */
+/* ------------------- PROJECT 2 ------------------- */
+
+.card10 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100em;
+    max-width: 65em;
+}
+.tab {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 1em;
+    border-bottom: 1px solid black;
+    transition: all 1s ease;
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+.tab span {
+    background-color: transparent;
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: black;
+    transition: all 1s ease;
+    margin-left: 1em;
+    position: relative;
+}
+.tab img {
+    position: absolute;
+    bottom: -2em;
+    right: 2em;
+    width: 60em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.tab .text1 {
+    position: absolute;
+    margin-left: 27em;
+    margin-top: -2.1em;
+    transition: all 1s ease;
+}
+.tab .text2 {
+    position: absolute;
+    margin-left: 50em;
+    margin-top: -2.1em;
+    transition: all 1s ease;
+}
+.tab:hover {
+    padding-bottom: 19em;
+}
+.tab:hover span {
+    color: grey;
+    margin-left: 10px;
+}
+.tab:hover .text1 {
+    color: grey;
+    margin-left: 28em;
+}
+.tab:hover .text2 {
+    color: grey;
+    margin-left: 51em;
+}
+.tab:hover img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----------------------------------- SECTION 4 ----------------------------------- */
+/* ----------------------------------- SECTION 4 ----------------------------------- */
+/* ----------------------------------- SECTION 4 ----------------------------------- */
+/* ----------------------------------- SECTION 4 ----------------------------------- */
+/* ----------------------------------- SECTION 4 ----------------------------------- */
+
+.section4 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+    width: 400px;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    position: absolute;
+    margin-top: -16em;
+    margin-left: -45em;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+
+  }
+  
+  .form-container .form-group input {
+    width: 120%;
+    padding: 12px 16px;
+    color: black;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .form-container .form-group label {
+    font-size: 1.8em;
+  }
+  .form-container .form-group textarea {
+    width: 120%;
+    padding: 12px 16px;
+    font-size: 1em;
+    resize: none;
+    color: grey;
+    height: 96px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.8;
+  }
+  .form-container .form-group textarea::placeholder {
+    opacity: 0.8;
+  }
+
+  .form-container .form-group input:focus {
+    outline: none;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+  }
+  
+  .form-container .form-submit-btn {
+    background: #313131;
+    color: white;
+    font-size: 20px;
+    padding: 49px 60px;
+    border: none;
+    width: 5em;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 1s ease, transform 0.2s ease;
+    position: absolute;
+    margin-top: 14em;
+    margin-left: 23em;
+  }
+
+  .form-submit-btn .buttontext {
+    margin-left: -30px;
+  }
+
+  .form-container .form-submit-btn:hover {
+    background: #5c5c5c;
+  }
+
+.contacts {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  position: absolute;
+  margin-left: 28em;
+  margin-top: -15em;
+}
+
+.contacts1 {
+  margin-top: 10px;
+  font-size: 1.1em;
+
+}
+
+.ctitle {
+  color: #5c5c5c;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.ctext {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.ctext2 {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.links a {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 0 1px;
+  position: relative;
+  width: fit-content;
+  transition: all 1s ease 0s;
+}
+
+.links a:hover {
+  color: #A0A0A0; 
+}
+
+.links a::before { 
+  content: '';
+  position: absolute;
+  bottom: 1%;
+  left: 0px;
+  width: 0%;
+  height: 1px;
+  background-color: #A0A0A0;
+  transition: all .5s;
+}
+
+.links a:hover::before {
+  width: 100%;
+}
+
+.arrow-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: -5px;
+}
+svg {
+  transition: transform 0.5s;
+  transform: rotate(90deg);
+}
+svg path {
+  stroke: #5c5c5c;
+}
