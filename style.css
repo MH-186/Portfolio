@@ -397,15 +397,15 @@ body {
 
 
   
-  .cards {
+.cards {
     display: inline-block;
-    height: 39vh;
+    height: 10em;
     place-items: center;
     background-color: transparent;
-    width: 29vh;
+    width: 8em;
     position: absolute;
-    margin-left: 37em;
-    margin-top: -16em;
+    margin-left: 34em;
+    margin-top: -22em;
 }
 
 .card {
@@ -509,7 +509,8 @@ svg path {
   font-weight: 650;
   font-size: 2.2em;
   margin-top: 15.8em;
-  margin-right: 19.3em;
+  margin-right: 17em;
+  width: 13em;
 }
 #parclas {
   position: absolute;
