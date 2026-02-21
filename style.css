@@ -13,7 +13,42 @@
     padding: 0;
     background-color: #F2F3F4;
 }  */
+
+#globe-container {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  background-color: transparent;
+  margin-left: 57em;
+  margin-top: -9em;
+  z-index: 2;
+}
+
+canvas {
+  width: 5em;
+  height: 5em;
+  display: block;
+}
   
+.situated p {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  text-align: end;
+  background: #313131;
+  position: absolute;
+  color: white;
+  margin-left: 7em;
+}
+.situated {
+  background-color: #313131;
+  width: 20em;
+  height: 3em;
+  padding-bottom: 3em;
+  border-radius: 100em;
+  position: absolute;
+  margin-left: 70em;
+  margin-top: -9em;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -699,6 +734,14 @@ svg path {
     position: absolute;
     margin-left: 8em;
     margin-top: 6em;
+  }
+
+  .circle-8 {
+    background: #232b2b;
+    position: absolute;
+    margin-left: 10em;
+    margin-top: -3em;
+    font-size: small;
   }
   
 /* ------------------- PROJECT 1 ------------------- */
