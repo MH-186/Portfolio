@@ -654,10 +654,13 @@ svg path {
   }
   
 
-  .circle span {
+  .circle a {
     position: absolute;
     transition: opacity 0.2s ease;
+    text-decoration: none;
+    color: white;
   }
+
 
   .circle .name {
     font-weight: 500;
