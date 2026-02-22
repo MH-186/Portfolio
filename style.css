@@ -279,7 +279,7 @@ body {
 /* ----------------------------------- SECTION 2 ----------------------------------- */
 /* ----------------------------------- SECTION 2 ----------------------------------- */
  
-.section2 {
+.SUMMARY {
     height: 100vh;
     background-color: #FFFFFD;
     display: flex;
@@ -563,7 +563,7 @@ svg path {
 /* ----------------------------------- SECTION 3 ----------------------------------- */
 
 
-.section3 {
+.PROJECTS {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -864,7 +864,7 @@ svg path {
 /* ----------------------------------- SECTION 4 ----------------------------------- */
 /* ----------------------------------- SECTION 4 ----------------------------------- */
 
-.section4 {
+.CONTACT {
   height: 90vh;
   display: flex;
   align-items: center;
