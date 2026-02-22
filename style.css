@@ -620,7 +620,7 @@ svg path {
   display: flex;
   position: absolute;
   margin-left: -50em;
-  margin-top: -1em;
+  margin-top: -1.5em;
 }
 
 
@@ -1066,4 +1066,5 @@ svg {
 svg path {
   stroke: #5c5c5c;
 }
+
 
