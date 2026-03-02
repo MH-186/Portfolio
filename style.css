@@ -833,6 +833,7 @@ svg path {
     right: 2em;
     width: 60em;
     opacity: 0;
+    pointer-events: none;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -1080,6 +1081,7 @@ svg {
 svg path {
   stroke: #5c5c5c;
 }
+
 
 
 
