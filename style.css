@@ -804,7 +804,8 @@ svg path {
     border-bottom: 1px solid black;
     transition: all 1s ease;
     overflow: hidden;
-    background-color: transparent;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
     cursor: pointer;
     z-index: 3;
 }
@@ -1081,6 +1082,7 @@ svg {
 svg path {
   stroke: #5c5c5c;
 }
+
 
 
 
